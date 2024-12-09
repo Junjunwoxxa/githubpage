@@ -162,6 +162,16 @@ body {
     color: #3147ab;
     text-decoration: none;
   }
+
+.recomendaciones li{
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    user-select: none;
+}
+
+
+
   
 /* Sección de detalles del curso */
 .course-details {
@@ -180,6 +190,7 @@ body {
 .pagsya {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 
 /* Información del curso */
@@ -288,7 +299,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .modal-content {
@@ -305,6 +316,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    user-select: none;
 }
 
 .modal-content .close {
@@ -326,6 +338,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: left;
+    user-select: none;
 }
 .modal-content .qr-container {
     display: flex !important;
@@ -336,6 +349,7 @@ body {
     justify-content: center; /* Centra las imágenes horizontalmente */
     gap: 15px; /* Espaciado entre las imágenes */
     margin-top: 20px;
+    
 }
 
 .modal-content .qr-container img {
