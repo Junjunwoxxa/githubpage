@@ -227,6 +227,7 @@ a {
 
 .carousel-item {
     min-width: 100%;
+
 }
 
 .carousel-item img {
@@ -305,6 +306,81 @@ button:hover {
     margin-top: 10px;
 }
 
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.section-title {
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.cours-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 20px; /* Espaciado entre los cuadros */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.cour-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(33.333% - 20px); /* Tres columnas por fila */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cour-card img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.cour-info {
+    padding: 10px;
+    text-align: center; /* Centra el texto dentro de cada tarjeta */
+}
+
+.cour-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.cour-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.cour-info .price {
+    color: #ff5733;
+    font-weight: bold;
+    font-size: 18px;
+}
 footer {
     background-image: url(IMG/carrito/fondopie.jpg);
     background-repeat: no-repeat;
@@ -327,4 +403,3 @@ footer p {
 footer strong {
     font-weight: bold;
 }
-
