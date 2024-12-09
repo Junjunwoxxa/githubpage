@@ -159,7 +159,8 @@ body {
   }
   
   a {
-    color: #00ff95;
+    color: #3147ab;
+    text-decoration: none;
   }
   
 /* Sección de detalles del curso */
@@ -195,6 +196,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    user-select: none;
 }
 
 .specifications {
@@ -267,12 +269,12 @@ body {
 }
 
 .whatsapp-btn {
-    background-color: #12b84f;
+    background-color: #12946b;
     color: white;
 }
 
 .whatsapp-btn:hover {
-    background-color: #128c3f;
+    background-color: #1dad95e9;
 }
 
 /* Modal */
@@ -324,6 +326,35 @@ body {
     padding: 0;
     margin: 0;
     text-align: left;
+}
+.modal-content .qr-container {
+    display: flex !important;
+}
+/* Contenedor para los QR (Yape y Plin) */
+.modal-content .qr-container {
+    display: flex; /* Coloca las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin-top: 20px;
+}
+
+.modal-content .qr-container img {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+    .modal-content .qr-container {
+        flex-direction: column; /* Apila las imágenes en dispositivos pequeños */
+        align-items: center; /* Centra las imágenes apiladas */
+    }
+
+    .modal-content .qr-container img {
+        width: 80%; /* Ajusta el tamaño de las imágenes apiladas */
+        margin-bottom: 10px; /* Espaciado entre imágenes */
+    }
 }
 
 /* Pie de página */
