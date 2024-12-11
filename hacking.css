@@ -366,7 +366,7 @@ body {
     }
 
     .modal-content .qr-container img {
-        width: 80%; /* Ajusta el tamaño de las imágenes apiladas */
+        width: 60%; /* Ajusta el tamaño de las imágenes apiladas */
         margin-bottom: 10px; /* Espaciado entre imágenes */
     }
 }
