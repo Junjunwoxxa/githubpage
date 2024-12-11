@@ -46,12 +46,24 @@ html {
     border: 1px solid #333;
     border-radius: 5px;
     text-align: center;
+    display: inline-flex; /* Asegura que los elementos se alineen correctamente */
+    align-items: center; /* Alinea los elementos en el centro */
+    justify-content: center; /* Asegura que los elementos dentro del botón estén centrados */
 }
 
 .menu .btn.primary {
-    background-color: #333;
-    color: #fff;
-    border-color: #333;
+    border-color: #fff;
+    height: 50px; /* Ajusté la altura para que se vea más apropiado */
+    width: 50px; /* Ajusté el tamaño del botón */
+}
+
+.menu .btn.primary img {
+    max-width: 100%; /* Ajusta la imagen al tamaño del botón */
+    max-height: 100%; /* Asegura que la imagen no exceda el tamaño del botón */
+    object-fit: contain; /* Mantiene la imagen proporcional */
+}
+.menu .btn.primary img:hover{
+    transform: translateY(-5px);
 }
 
 .hamburger {
@@ -134,6 +146,7 @@ html {
         overflow: hidden;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    
 }
 
 a {
@@ -213,7 +226,7 @@ a {
         margin-left: 8px; /* Ajuste para el espaciado entre el icono y el texto */
     }
 }
-
+    
 @media (max-width: 480px) {
     .cta {
         padding: 10px 12px;  /* Reduce aún más el padding en pantallas muy pequeñas */
@@ -228,7 +241,9 @@ a {
     .cta svg {
         margin-left: 5px; /* Ajuste para pantallas muy pequeñas */
     }
+    
 }
+
 
 .carousel {
     position: relative;
@@ -283,7 +298,9 @@ button:hover {
 .centro {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    margin: 50px;
+
+    background-color: #fff;
+    width: 100%;
 }
 
 .courses {
