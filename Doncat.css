@@ -391,13 +391,16 @@ button:hover {
 
 .cour-card img {
     width: 100%;
-    max-height: 100%;
     object-fit: cover;
 }
 
 .cour-info {
     padding: 10px;
     text-align: center; /* Centra el texto dentro de cada tarjeta */
+    flex-grow: 1; /* Permite que los elementos internos se expandan de manera uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea el contenido */
 }
 
 .cour-info h3 {
@@ -405,6 +408,26 @@ button:hover {
     font-weight: bold;
     margin: 0;
     color: #333;
+    margin-bottom: 10px; /* Añade un espaciado debajo del título */
+}
+/*
+.saltoredes{
+    padding-bottom: 70%;
+}
+.saltorobo{
+    padding-bottom: 29%;
+}
+.saltoespe{
+    padding-bottom: 15%;
+}
+.saltomar20{
+    padding-bottom: 28%;
+}
+.saltobase{
+    padding-bottom: 30%;
+}
+.saltopython{
+    padding-bottom: 44%;  
 }
 
 .cour-info p {
@@ -412,11 +435,12 @@ button:hover {
     color: #666;
     font-size: 14px;
 }
-
+*/
 .cour-info .price {
     color: #ff5733;
     font-weight: bold;
     font-size: 18px;
+    margin-top: auto; /* Empuja el precio hacia el fondo del contenedor */
 }
 
 footer {
