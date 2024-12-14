@@ -21,6 +21,7 @@ html {
     font-size: 20px;
     font-weight: bold;
     color: #6a1b9a;
+    user-select: none;
 }
 
 .search-bar input {
@@ -92,15 +93,9 @@ html {
         border-radius: 5px;
         padding: 10px;
     }
-
     .menu.show {
         display: flex;
     }
-
-    .hamburger {
-        display: block;
-    }
-
     .container {
         flex-direction: column;
     }
@@ -154,6 +149,10 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.medio{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .cta {
@@ -227,6 +226,7 @@ a {
     .cta svg {
         margin-left: 8px; /* Ajuste para el espaciado entre el icono y el texto */
     }
+
 }
     
 @media (max-width: 480px) {
@@ -333,7 +333,7 @@ button:hover {
 .course .price {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #380707;
 }
 
 .course .badge {
@@ -410,32 +410,6 @@ button:hover {
     color: #333;
     margin-bottom: 10px; /* Añade un espaciado debajo del título */
 }
-/*
-.saltoredes{
-    padding-bottom: 70%;
-}
-.saltorobo{
-    padding-bottom: 29%;
-}
-.saltoespe{
-    padding-bottom: 15%;
-}
-.saltomar20{
-    padding-bottom: 28%;
-}
-.saltobase{
-    padding-bottom: 30%;
-}
-.saltopython{
-    padding-bottom: 44%;  
-}
-
-.cour-info p {
-    margin: 5px 0;
-    color: #666;
-    font-size: 14px;
-}
-*/
 .cour-info .price {
     color: #ff5733;
     font-weight: bold;
@@ -444,24 +418,42 @@ button:hover {
 }
 
 footer {
-    background-image: url(IMG/carrito/fondopie.jpg);
-    background-repeat: no-repeat;
+    background-color: #212121; /* Fondo negro solo para el footer */
     text-align: center;
     padding: 20px;
-    background-color: #fff;
     margin-top: 30px;
+    color: white; /* Texto blanco para contraste */
+    width: 100%; /* El footer ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Considera el padding dentro del ancho */
 }
-
-footer h2 {
+footer h3{
+    color: rgb(166, 209, 231);
     font-size: 24px;
     margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.redsocial{
+    color: rgb(30, 113, 229);
+    font-size: 16px;
+}
+
+.redsocial a{
+    color: #ffffff;
+}
+
+.redsocial a:hover{
+    color: #64dbf3;
+    text-decoration: underline;
 }
 
 footer p {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-footer strong {
+footer strong{
     font-weight: bold;
+    color: white;
 }
