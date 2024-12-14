@@ -109,17 +109,24 @@ body {
     color: #3147ab;
     text-decoration: none;
   }
-
 .recomendaciones li{
     list-style: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     user-select: none;
 }
-
-
-
-  
+.recomendaciones a:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.pags a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
+.pagsya a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
 /* Sección de detalles del curso */
 .course-details {
     display: flex;
